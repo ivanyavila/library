@@ -24,6 +24,7 @@
 		<module>bookservice</module>
 
 		<module>registryservice</module>
+		<module>configservice</module>
 	</modules>
 
 	<properties>
@@ -68,6 +69,18 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+				<version>${eureka.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-config-server</artifactId>
+				<version>${eureka.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-config</artifactId>
 				<version>${eureka.version}</version>
 			</dependency>
 
