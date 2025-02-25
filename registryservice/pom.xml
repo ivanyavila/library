@@ -14,16 +14,19 @@
 	<artifactId>registryservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>registryservice</name>
-	<description>Eureka Server</description>
+	<description>Eureka Registry Server</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring-boot.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<version>${eureka.version}</version>
 		</dependency>
 
 		<dependency>
